@@ -5,7 +5,7 @@
         strokeWeight = 1,
         mouseMoveHandler = function(evt) {
             evt.preventDefault();
-            canvasContext.lineTo(evt.offsetX, evt.offsetY);
+            canvasContext.lineTo(evt.clientX - 8, evt.clientY - 8);
             canvasContext.stroke();
         };
     var colorButtons = document.getElementsByClassName('colorButton');
@@ -25,12 +25,12 @@
         evt.preventDefault();
         canvasContext.beginPath();
         console.log(evt);
-        canvasContext.moveTo(evt.offsetX, evt.offsetY);
+        canvasContext.moveTo(evt.clientX - 8, evt.clientY - 8);
         canvas.addEventListener('mousemove', mouseMoveHandler);
     });
     canvas.addEventListener('mouseup', function(evt){
         evt.preventDefault();
-        canvasContext.lineTo(evt.offsetX, evt.offsetY);
+        canvasContext.lineTo(evt.clientX - 8, evt.clientY - 8);
         canvasContext.stroke();
         canvas.removeEventListener('mousemove', mouseMoveHandler);
     });
