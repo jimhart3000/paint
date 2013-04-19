@@ -6,6 +6,7 @@
         strokeWeight = 1,
         mouseMoveHandler = function(evt) {
             evt.preventDefault();
+            socket.emit('line', {location: [evt.layerX, evt.layerY]});
             canvasContext.lineTo(evt.layerX - 8, evt.layerY - 8);
             canvasContext.stroke();
         };
@@ -33,6 +34,7 @@
     });
     canvas.addEventListener('mousedown', function(evt){
         evt.preventDefault();
+        socket.emit('line', {location: [evt.layerX, evt.layerY]});
         canvasContext.beginPath();
         console.log(evt);
         canvasContext.moveTo(evt.layerX - 8, evt.layerY - 8);
