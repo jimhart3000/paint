@@ -11,23 +11,157 @@ canvas, canvas:active {
     display: block;
     margin: 0;
     padding: 0;
+    width: 126px;
 }
 #colorSelect li {
-    width: 50px;
-    height: 50px;
+    width: 21px;
+    height: 21px;
+    float: left;
 }
-#black {
-    background-color: black;
-}
-#blue {
-    background-color: blue;
-}
-#red {
-    background-color: red;
-}
-#green {
-    background-color: green;
-}
+#black {background-color: black;}
+#darkgreen {background-color: darkgreen;}
+#darkslategray {background-color: darkslategray;}
+#maroon {background-color: maroon;}
+#olive {background-color: olive;}
+#green {background-color: green;}
+#teal {background-color: teal;}
+#navy {background-color: navy;}
+#purple {background-color: purple;}
+#indigo {background-color: indigo;}
+#midnightblue {background-color: midnightblue;}
+#darkred {background-color: darkred;}
+#darkcyan {background-color: darkcyan;}
+#darkblue {background-color: darkblue;}
+#darkmagenta {background-color: darkmagenta;}
+#darkolivegreen {background-color: darkolivegreen;}
+#saddlebrown {background-color: saddlebrown;}
+#forestgreen {background-color: forestgreen;}
+#olivedrab {background-color: olivedrab;}
+#seagreen {background-color: seagreen;}
+#darkgoldenrod {background-color: darkgoldenrod;}
+#darkslateblue {background-color: darkslateblue;}
+#sienna {background-color: sienna;}
+#mediumblue {background-color: mediumblue;}
+#dimgray {background-color: dimgray;}
+#brown {background-color: brown;}
+#lightseagreen {background-color: lightseagreen;}
+#darkturquoise {background-color: darkturquoise;}
+#darkviolet {background-color: darkviolet;}
+#firebrick {background-color: firebrick;}
+#mediumvioletred {background-color: mediumvioletred;}
+#maroon {background-color: maroon;}
+#mediumseagreen {background-color: mediumseagreen;}
+#chocolate {background-color: chocolate;}
+#crimson {background-color: crimson;}
+#steelblue {background-color: steelblue;}
+#goldenrod {background-color: goldenrod;}
+#lawngreen {background-color: lawngreen;}
+#mediumspringgreen {background-color: mediumspringgreen;}
+#gray {background-color: gray;}
+#slategray {background-color: slategray;}
+#cadetblue {background-color: cadetblue;}
+#yellowgreen {background-color: yellowgreen;}
+#limegreen {background-color: limegreen;}
+#darkorchid {background-color: darkorchid;}
+#red {background-color: red;}
+#orangered {background-color: orangered;}
+#darkorange {background-color: darkorange;}
+#orange {background-color: orange;}
+#gold {background-color: gold;}
+#yellow {background-color: yellow;}
+#chartreuse {background-color: chartreuse;}
+#green {background-color: green;}
+#lime {background-color: lime;}
+#springgreen {background-color: springgreen;}
+#aqua {background-color: aqua;}
+#cyan {background-color: cyan;}
+#deepskyblue {background-color: deepskyblue;}
+#blue {background-color: blue;}
+#fuchsia {background-color: fuchsia;}
+#magenta {background-color: magenta;}
+#lightslategray {background-color: lightslategray;}
+#peru {background-color: peru;}
+#blueviolet {background-color: blueviolet;}
+#purple {background-color: purple;}
+#deeppink {background-color: deeppink;}
+#mediumturquoise {background-color: mediumturquoise;}
+#dodgerblue {background-color: dodgerblue;}
+#turquoise {background-color: turquoise;}
+#royalblue {background-color: royalblue;}
+#darkkhaki {background-color: darkkhaki;}
+#indianred {background-color: indianred;}
+#slateblue {background-color: slateblue;}
+#mediumorchid {background-color: mediumorchid;}
+#greenyellow {background-color: greenyellow;}
+#mediumaquamarine {background-color: mediumaquamarine;}
+#tomato {background-color: tomato;}
+#rosybrown {background-color: rosybrown;}
+#darkseagreen {background-color: darkseagreen;}
+#orchid {background-color: orchid;}
+#mediumpurple {background-color: mediumpurple;}
+#palevioletred {background-color: palevioletred;}
+#darkgray {background-color: darkgray;}
+#cornflower {background-color: cornflower;}
+#coral {background-color: coral;}
+#mediumslateblue {background-color: mediumslateblue;}
+#sandybrown {background-color: sandybrown;}
+#tan {background-color: tan;}
+#burlywood {background-color: burlywood;}
+#darksalmon {background-color: darksalmon;}
+#salmon {background-color: salmon;}
+#hotpink {background-color: hotpink;}
+#violet {background-color: violet;}
+#lightcoral {background-color: lightcoral;}
+#skyblue {background-color: skyblue;}
+#lightsalmon {background-color: lightsalmon;}
+#gray {background-color: gray;}
+#silver {background-color: silver;}
+#plum {background-color: plum;}
+#lightgreen {background-color: lightgreen;}
+#khaki {background-color: khaki;}
+#aquamarine {background-color: aquamarine;}
+#lightskyblue {background-color: lightskyblue;}
+#lightsteelblue {background-color: lightsteelblue;}
+#lightblue {background-color: lightblue;}
+#palegreen {background-color: palegreen;}
+#thistle {background-color: thistle;}
+#powderblue {background-color: powderblue;}
+#palegoldenrod {background-color: palegoldenrod;}
+#paleturquoise {background-color: paleturquoise;}
+#lightgray {background-color: lightgray;}
+#wheat {background-color: wheat;}
+#navajowhite {background-color: navajowhite;}
+#gainsboro {background-color: gainsboro;}
+#peachpuff {background-color: peachpuff;}
+#moccasin {background-color: moccasin;}
+#lightpink {background-color: lightpink;}
+#bisque {background-color: bisque;}
+#pink {background-color: pink;}
+#lightgoldenrod {background-color: lightgoldenrod;}
+#blanchedalmond {background-color: blanchedalmond;}
+#lemonchiffon {background-color: lemonchiffon;}
+#beige {background-color: beige;}
+#antiquewhite {background-color: antiquewhite;}
+#papayawhip {background-color: papayawhip;}
+#cornsilk {background-color: cornsilk;}
+#linen {background-color: linen;}
+#lavender {background-color: lavender;}
+#mistyrose {background-color: mistyrose;}
+#lightyellow {background-color: lightyellow;}
+#lightcyan {background-color: lightcyan;}
+#oldlace {background-color: oldlace;}
+#whitesmoke {background-color: whitesmoke;}
+#seashell {background-color: seashell;}
+#floralwhite {background-color: floralwhite;}
+#ivory {background-color: ivory;}
+#honeydew {background-color: honeydew;}
+#azure {background-color: azure;}
+#aliceblue {background-color: aliceblue;}
+#lavenderblush {background-color: lavenderblush;}
+#mintcream {background-color: mintcream;}
+#snow {background-color: snow;}
+#ghostwhite {background-color: ghostwhite;}
+#white {background-color: white;}
 #clear {
     float:left;
 }
