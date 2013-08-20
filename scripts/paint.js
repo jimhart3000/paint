@@ -2,18 +2,20 @@
     var canvas = document.getElementById('canvas'),
         body = document.getElementsByTagName('body'),
         canvasContext = canvas.getContext('2d'),
+        activePath = false,
         strokeColor = '#000000',
         strokeWeight = 1,
         mouseMoveHandler = function(evt) {
             evt.preventDefault();
+            console.log(evt);
             socket.emit('line', {location: [evt.layerX, evt.layerY]});
-            canvasContext.lineTo(evt.layerX - 8, evt.layerY - 8);
+            canvasContext.lineTo(evt.layerX, evt.layerY);
             canvasContext.stroke();
         };
     var mouseUpHandler = function(evt) {
         console.log(evt);
         evt.preventDefault();
-        canvasContext.lineTo(evt.layerX - 8, evt.layerY - 8);
+        canvasContext.lineTo(evt.layerX, evt.layerY);
         canvasContext.stroke();
         window.removeEventListener('mousemove', mouseMoveHandler);
     };
@@ -34,10 +36,13 @@
     });
     canvas.addEventListener('mousedown', function(evt){
         evt.preventDefault();
-        socket.emit('line', {location: [evt.layerX, evt.layerY]});
+        socket.emit('line', {hi: "there"});
         canvasContext.beginPath();
         console.log(evt);
-        canvasContext.moveTo(evt.layerX - 8, evt.layerY - 8);
+        canvasContext.moveTo(evt.layerX, evt.layerY);
+        // canvasContext.lineTo(evt.layerX, evt.layerY);
+        // canvasContext.stroke();
+        console.log(canvasContext);
         window.addEventListener('mousemove', mouseMoveHandler);
         canvas.addEventListener('mouseup', mouseUpHandler);
     });
